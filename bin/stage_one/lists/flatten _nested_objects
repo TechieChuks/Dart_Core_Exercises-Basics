@@ -1,0 +1,9 @@
+void main() {
+  var courses = [
+    Course('Dart', ['Variables', 'Loops', 'OOP']),
+    Course('Flutter', ['Widgets', 'State']),
+  ];
+
+  var allTopics = courses.expand((c) => c.topics).toList();
+  print(allTopics); // [Variables, Loops, OOP, Widgets, State]
+}
