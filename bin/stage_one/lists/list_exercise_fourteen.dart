@@ -5,5 +5,7 @@ void main() {
     print(n);
   }
 
-  nums.forEach((n) => print(n * 2));
+  for (var n in nums) {
+    print(n * 2);
+  }
 }

@@ -1,4 +1,6 @@
 void main() {
   var nums = [1, 2, 3];
-  nums.forEach((n) => print(n * 2));
+  for (var n in nums) {
+    print(n * 2);
+  }
 }
