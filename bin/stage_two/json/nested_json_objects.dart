@@ -13,5 +13,7 @@ void main() {
   ''';
 
   Map<String, dynamic> user = jsonDecode(nestedJson);
-  print("${user['name']} lives in ${user['address']['city']}");
+  print(
+    "${user['name']} lives in ${user['address']['address']} with a Zip code of ${user['address']['zip']}",
+  );
 }
